@@ -1,0 +1,15 @@
+D:\Software Development\C#\Github\Folder-Maker\bin\Debug\net8.0\Folder-Maker.exe
+D:\Software Development\C#\Github\Folder-Maker\bin\Debug\net8.0\Folder-Maker.deps.json
+D:\Software Development\C#\Github\Folder-Maker\bin\Debug\net8.0\Folder-Maker.runtimeconfig.json
+D:\Software Development\C#\Github\Folder-Maker\bin\Debug\net8.0\Folder-Maker.dll
+D:\Software Development\C#\Github\Folder-Maker\bin\Debug\net8.0\Folder-Maker.pdb
+D:\Software Development\C#\Github\Folder-Maker\obj\Debug\net8.0\Folder-Maker.GeneratedMSBuildEditorConfig.editorconfig
+D:\Software Development\C#\Github\Folder-Maker\obj\Debug\net8.0\Folder-Maker.AssemblyInfoInputs.cache
+D:\Software Development\C#\Github\Folder-Maker\obj\Debug\net8.0\Folder-Maker.AssemblyInfo.cs
+D:\Software Development\C#\Github\Folder-Maker\obj\Debug\net8.0\Folder-Maker.csproj.CoreCompileInputs.cache
+D:\Software Development\C#\Github\Folder-Maker\obj\Debug\net8.0\Folder-Maker.sourcelink.json
+D:\Software Development\C#\Github\Folder-Maker\obj\Debug\net8.0\Folder-Maker.dll
+D:\Software Development\C#\Github\Folder-Maker\obj\Debug\net8.0\refint\Folder-Maker.dll
+D:\Software Development\C#\Github\Folder-Maker\obj\Debug\net8.0\Folder-Maker.pdb
+D:\Software Development\C#\Github\Folder-Maker\obj\Debug\net8.0\Folder-Maker.genruntimeconfig.cache
+D:\Software Development\C#\Github\Folder-Maker\obj\Debug\net8.0\ref\Folder-Maker.dll
