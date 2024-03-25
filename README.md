@@ -22,7 +22,10 @@ Download and Run the single executable file from the Setup folder and provide th
 
 ## Example
 
-https://youtu.be/q1j_g9ycmCw
+
+https://github.com/NandhaKumarSR/Folder-Maker/assets/123328451/586d2acd-bff9-4384-952b-ad7d0cf9fb11
+
+
 
 Suppose you want to organize daily reports. Using **Folder Maker**, you can create folders like:
 - `C:\Day 1`
