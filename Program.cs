@@ -31,10 +31,10 @@ do
     string? folderName = Console.ReadLine();
     Console.WriteLine();
     folderName = folderName == null ? "" : folderName;
-    Console.WriteLine($"Do you want to start from 1?\nexample:{folderName} 1 will be name of the first folder:");
+    Console.WriteLine($"Do you want to start from 1?\nexample: {folderName} 1 will be name of the first folder:");
 
     List<string> options = ["y", "n", "Y", "N"];
-    Console.Write($"Enter 'Y' to continue or 'N' to enter a different start number.(Y/N): ");
+    Console.Write($"Enter Y to continue or N to enter a different start number.(Y/N): ");
     string userOption = GetValidOption(options).ToLower();
 
 
@@ -70,11 +70,16 @@ do
     }
     Console.WriteLine("Folders created successfully!!! Please check the directory.\n");
 
-    Console.Write("Enter 0 to exit the application or 1 to rerun(0/1): ");
+    Console.Write("Enter 0 to exit the application or 1 to rerun (0/1): ");
     options = ["0", "1"];
     userOption = GetValidOption(options);
     if (userOption == "0")
+    {
         run = false;
+        Environment.Exit(0);
+    }
+    else if (userOption == "1")
+        Console.Clear();
 
 } while (run);
 
@@ -102,7 +107,7 @@ static string GetValidOption(List<string> options) //gets a valid option from th
     {
         optionByUser = Console.ReadLine();
         if (optionByUser != null)
-            optionValidty = options.Contains(optionByUser);
+            optionValidty = options.Contains(optionByUser.Trim());
 
         if (optionValidty == false)
             Console.WriteLine("Enter a valid option.");

@@ -1,0 +1,2 @@
+D:\Software Development\C#\Github\Folder-Maker\Folder-Maker.pdb
+D:\Software Development\C#\Github\Folder-Maker\Folder-Maker.exe
