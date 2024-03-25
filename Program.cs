@@ -18,53 +18,66 @@ Console.OutputEncoding = System.Text.Encoding.UTF8; //Displays unicode character
 Console.WriteLine("\nHello! Welcome to folder maker 😀");
 Console.WriteLine("This application, lets you to create series of folders quickly.");
 Console.WriteLine("You can exit the application at any point by pressing ctrl+c\n");
+bool run = true;
 
-
-Console.WriteLine("Enter/Paste the directory where you need to create the folders. (ctrl+ \u21E7shift +v to paste)\n" //U+21E7 is the unicode for ⇧ shift key
-+ $"Example: {Directory.GetCurrentDirectory()}");
-string? directory = GetValidDirectory();
-
-Console.Write("Enter the name of the folder: ");
-string? folderName = Console.ReadLine();
-Console.WriteLine();
-folderName = folderName == null ? "" : folderName;
-Console.WriteLine($"Do you want to start from 1?\nexample:{folderName} 1 will be name of the first folder:");
-
-List<string> options = ["y", "n", "Y", "N"];
-Console.Write($"Enter 'Y' to continue or 'N' to enter a different start number.(Y/N): ");
-string userOption = GetValidOption(options).ToLower();
-
-
-int startNumber = 1;
-if (userOption == "n")
-{
-    Console.Write("Enter the start number: ");
-    startNumber = GetValidNumber();
-}
-
-Console.Write("Enter the end number: ");
-
-int endNumber = 0;
 do
 {
-    endNumber = GetValidNumber();
-} while (endNumber < startNumber);
+    Console.WriteLine("Enter/Paste the directory where you need to create the folders. (Use ctrl+ \u21E7shift +v to paste or copy the path and right click on the console)\n"
+    //U+21E7 is the unicode for ⇧ shift key
+    + $"Example: {Directory.GetCurrentDirectory()}");
+    string? directory = GetValidDirectory();
 
-for (int folderNumber = startNumber; folderNumber <= endNumber; folderNumber++)
-{
-    var folder = Path.Combine(directory, $"{folderName} {folderNumber}");
-    if (Directory.Exists(folder))
+    Console.Write("Enter the name of the folder: ");
+    string? folderName = Console.ReadLine();
+    Console.WriteLine();
+    folderName = folderName == null ? "" : folderName;
+    Console.WriteLine($"Do you want to start from 1?\nexample:{folderName} 1 will be name of the first folder:");
+
+    List<string> options = ["y", "n", "Y", "N"];
+    Console.Write($"Enter 'Y' to continue or 'N' to enter a different start number.(Y/N): ");
+    string userOption = GetValidOption(options).ToLower();
+
+
+    int startNumber = 1;
+    if (userOption == "n")
     {
-        options = ["s", "r", "S", "R"];
-        Console.Write($"{folderName} {folderNumber} exists, Enter 'S' to skip or 'R' to Replace (S/R): ");
-        userOption = GetValidOption(options);
-        string option = userOption.ToLower();
-        if (option == "s")
-            continue;
-    };
-    Directory.CreateDirectory(Path.Combine(directory, $"{folderName} {folderNumber}"));
+        Console.Write("Enter the start number: ");
+        startNumber = GetValidNumber();
+    }
 
-}
+    Console.Write("Enter the end number: ");
+
+    int endNumber = 0;
+    do
+    {
+        endNumber = GetValidNumber();
+    } while (endNumber < startNumber);
+
+    for (int folderNumber = startNumber; folderNumber <= endNumber; folderNumber++)
+    {
+        var folder = Path.Combine(directory, $"{folderName} {folderNumber}");
+        if (Directory.Exists(folder))
+        {
+            options = ["s", "r", "S", "R"];
+            Console.Write($"{folderName} {folderNumber} exists, Enter 'S' to skip or 'R' to Replace (S/R): ");
+            userOption = GetValidOption(options);
+            string option = userOption.ToLower();
+            if (option == "s")
+                continue;
+        };
+        Directory.CreateDirectory(Path.Combine(directory, $"{folderName} {folderNumber}"));
+
+    }
+    Console.WriteLine("Folders created successfully!!! Please check the directory.\n");
+
+    Console.Write("Enter 0 to exit the application or 1 to rerun(0/1): ");
+    options = ["0", "1"];
+    userOption = GetValidOption(options);
+    if (userOption == "0")
+        run = false;
+
+} while (run);
+
 
 static int GetValidNumber() //gets a valid integer from the user
 {
