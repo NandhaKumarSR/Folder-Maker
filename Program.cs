@@ -51,6 +51,8 @@ do
     do
     {
         endNumber = GetValidNumber();
+        if (startNumber > endNumber)
+            Console.WriteLine("End number should be greater than start number");
     } while (endNumber < startNumber);
 
     for (int folderNumber = startNumber; folderNumber <= endNumber; folderNumber++)

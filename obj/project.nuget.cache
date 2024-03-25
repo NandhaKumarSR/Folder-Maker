@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sqcSVyFG+G9yDe/VXAzueLx5qvkbx6/qcg1eYE4wah4YgAHrKM2z7L5MvMTze2iF9QwgTGF0cqXqHKoOP+4noA==",
+  "dgSpecHash": "SLwkhLii5jeiPrCLmUYlDpno0390r3usctw++hyG0cgSEiM6xdn1GmQoC1SyAZZoCEuHBYjIrCtcoO9z4Kqyqg==",
   "success": true,
   "projectFilePath": "D:\\Software Development\\C#\\Github\\Folder-Maker\\Folder-Maker.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Nandha Kumar\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.2\\microsoft.net.illink.tasks.8.0.2.nupkg.sha512",
-    "C:\\Users\\Nandha Kumar\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.2\\microsoft.netcore.app.runtime.win-x64.8.0.2.nupkg.sha512",
-    "C:\\Users\\Nandha Kumar\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.2\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.2.nupkg.sha512",
-    "C:\\Users\\Nandha Kumar\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.2\\microsoft.aspnetcore.app.runtime.win-x64.8.0.2.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
