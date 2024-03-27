@@ -12,7 +12,7 @@ if folder exists, prompts for skip or replace, based on the user input action wi
 
 using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
-
+Console.Title = "Folder Maker";
 Console.OutputEncoding = System.Text.Encoding.UTF8; //Displays unicode characters on the console
 
 Console.WriteLine("\nHello! Welcome to folder maker 😀");
